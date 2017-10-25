@@ -1,0 +1,13 @@
+{
+  "name": "taiga-sync-github-issues",
+  "version": "1.0.0",
+  "description": "Sync Taiga and GitHub issues",
+  "author": "Nazim Lachter <nlachter@gmail.com>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}

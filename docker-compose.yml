@@ -1,0 +1,10 @@
+version: "3"
+services:
+  taiga-sync-github-issues:
+    image: node
+    container_name: taiga-sync-github-issues
+    ports:
+      - 84:80
+    volumes:
+      - ./:/app
+    command: /app/run.sh
