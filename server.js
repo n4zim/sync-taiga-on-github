@@ -24,8 +24,6 @@ app.use(bodyParser.json());
   ********************************************************/
 
 const TAIGA_SECRET = process.env.TAIGA_SECRET;
-const PATHS = { issues: 'data/issues.json' };
-let DATA = { issues: {} };
 
 
 /********************************************************
@@ -33,6 +31,8 @@ let DATA = { issues: {} };
   ********************************************************/
 
 const fs = require('fs');
+
+const PATHS = { issues: 'data/issues.json', users: 'data/users.json' };
 
 function updateFile(path, jsonContent) {
 	fs.writeFile(path, JSON.stringify(jsonContent), 'utf8', function(err) {
@@ -47,11 +47,20 @@ function readFile(path, callback) {
 	});
 }
 
+let DATA = { issues: {}, users: {} };
+
 // Issues
 if(fs.existsSync(PATHS.issues)) {
-	readFile(PATHS.issues, content => { DATA.issues = content; });
+	readFile(PATHS.issues, issues => { DATA.issues = issues; });
 } else {
 	updateFile(PATHS.issues, DATA.issues);
+}
+
+// Users
+if(fs.existsSync(PATHS.users)) {
+	readFile(PATHS.users, users => { DATA.users = users; });
+} else {
+	updateFile(PATHS.users, DATA.users);
 }
 
 
