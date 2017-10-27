@@ -7,4 +7,9 @@ services:
       - 84:80
     volumes:
       - ./:/app
+    environment:
+      TAIGA_SECRET: ${TAIGA_SECRET}
+      GITHUB_TOKEN: ${GITHUB_TOKEN}
+      GITHUB_OWNER: ${GITHUB_OWNER}
+      GITHUB_REPO: ${GITHUB_REPO}
     command: /app/run.sh
