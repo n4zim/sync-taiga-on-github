@@ -4,8 +4,6 @@
   *   IMPORTS
   ********************************************************/
 
-const utf8 = require('utf8');
-const hmacsha1 = require('hmacsha1');
 const githubApi = require('github-api');
 
 
@@ -14,17 +12,9 @@ const githubApi = require('github-api');
   ********************************************************/
 
 const app = require('express')();
-
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-
-
-/********************************************************
-  *   GLOBAL 
-  ********************************************************/
-
-const TAIGA_SECRET = process.env.TAIGA_SECRET;
 
 
 /********************************************************
@@ -143,57 +133,51 @@ function DEBUG(webhook) {
 }
 
 app.post('/taiga', (req, res) => {
+	if(req.query.key === process.env.TAIGA_SECRET) {
+        const webhook = req.body;
+        //DEBUG(webhook);
+        switch(webhook.type) {
 
-    const webhook = req.body;
+            // TEST
+            case 'test':
+                console.log("Test webhook received !");
+                break;
 
-    const signature = req.headers['x-taiga-webhook-signature'];
+            // ISSUES
+            case 'issue':
+                switch (webhook.action) {
+                    case 'create':
+                    case 'change':
+                        if (isValid(webhook)) {
+                            if (typeof webhook.change !== 'undefined' && typeof webhook.change.comment !== 'undefined') {
+                                commentIssue(
+                                    webhook.data.ref,			// taigaId
+                                    webhook.by.username,		// author
+                                    webhook.change.comment		// comment
+                                );
+                            } else {
+                                updateIssue(
+                                    webhook.data.ref,			// taigaId
+                                    webhook.by.username,		// author
+                                    webhook.data.subject,		// subject
+                                    webhook.data.description,	// description
+                                    webhook.data.assigned_to	// assignment
+                                );
+                            }
+                        }
+                        break;
+                    default:
+                        console.log("ERROR : Unknown action \"" + webhook.action + "\"");
+                }
+                break;
 
-    console.log(utf8.encode(webhook));
-
-    console.log(webhook);
-
-    //DEBUG(webhook);
-
-	/*switch(webhook.type) {
-
-		// TEST
-		case 'test':
-			console.log("Test webhook received !");
-			break;
-
-		// ISSUES
-	    case 'issue':
-	    	switch(webhook.action) {
-	    		case 'create':
-	    		case 'change':
-	    			if(isValid(webhook)) {
-						if(typeof webhook.change !== 'undefined' && typeof webhook.change.comment !== 'undefined') {
-							commentIssue(
-								webhook.data.ref,			// taigaId
-								webhook.by.username,		// author
-								webhook.change.comment		// comment
-							);
-						} else {
-							updateIssue(
-								webhook.data.ref,			// taigaId
-								webhook.by.username,		// author
-								webhook.data.subject,		// subject
-								webhook.data.description,	// description
-								webhook.data.assigned_to	// assignment
-							);
-						}
-	    			}
-	    			break;
-	    		default:
-	    			console.log("ERROR : Unknown action \"" + webhook.action + "\"");
-	    	}
-	        break;
-
-        // NONE
-	    default:
-	        console.log("ERROR : Unknown type \"" + webhook.type + "\"");
-
-	}*/
+            // NONE
+            default:
+                console.log("ERROR : Unknown type \"" + webhook.type + "\"");
+        }
+	} else {
+        console.log("WRONG TAIGA SECRET SET :", req.query.key);
+	}
 
   	res.end("ok");
 });
