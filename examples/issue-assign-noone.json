@@ -1,0 +1,77 @@
+{
+  "change": {
+    "comment": "",
+    "edit_comment_date": null,
+    "comment_html": "",
+    "delete_comment_date": null,
+    "comment_versions": null,
+    "diff": {
+      "assigned_to": {
+        "to": null,
+        "from": "Nazim Lachter"
+      }
+    }
+  },
+  "by": {
+    "gravatar_id": "USER-GRAVATAR-ID",
+    "id": 4,
+    "full_name": "Nazim Lachter",
+    "photo": "USER-PICTURE-URL",
+    "permalink": "https://TAIGA-URL/profile/nazim",
+    "username": "nazim"
+  },
+  "date": "2017-10-31T12:59:40.945Z",
+  "action": "change",
+  "data": {
+    "tags": [],
+    "external_reference": null,
+    "custom_attributes_values": {},
+    "project": {
+      "logo_big_url": "PROJECT-BIG-LOGO-URL",
+      "permalink": "https://TAIGA-URL/project/development",
+      "id": 1,
+      "name": "Développement"
+    },
+    "watchers": [],
+    "status": {
+      "slug": "nouveau",
+      "color": "#888a85",
+      "is_closed": false,
+      "id": 1,
+      "name": "Nouveau"
+    },
+    "description": "desc",
+    "milestone": null,
+    "type": {
+      "color": "#ce5c00",
+      "id": 1,
+      "name": "Anomalie"
+    },
+    "priority": {
+      "color": "#3465a4",
+      "id": 2,
+      "name": "Normal"
+    },
+    "ref": 4211,
+    "owner": {
+      "gravatar_id": "USER-GRAVATAR-ID",
+      "id": 4,
+      "full_name": "Nazim Lachter",
+      "photo": "USER-PICTURE-URL",
+      "permalink": "https://TAIGA-URL/profile/nazim",
+      "username": "nazim"
+    },
+    "created_date": "2017-10-31T12:47:30.072Z",
+    "severity": {
+      "color": "#3465a4",
+      "id": 3,
+      "name": "Normal"
+    },
+    "assigned_to": null,
+    "subject": "titre",
+    "modified_date": "2017-10-31T12:59:40.878Z",
+    "id": 3061,
+    "finished_date": null
+  },
+  "type": "issue"
+}

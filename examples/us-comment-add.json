@@ -1,0 +1,84 @@
+{
+  "change": {
+    "comment": "commentaire",
+    "edit_comment_date": null,
+    "comment_html": "<p>commentaire</p>",
+    "delete_comment_date": null,
+    "comment_versions": null,
+    "diff": {}
+  },
+  "by": {
+    "gravatar_id": "USER-GRAVATAR-ID",
+    "id": 4,
+    "full_name": "Nazim Lachter",
+    "photo": "USER-PICTURE-URL",
+    "permalink": "https://TAIGA-URL/profile/nazim",
+    "username": "nazim"
+  },
+  "date": "2017-10-31T13:10:51.288Z",
+  "action": "change",
+  "data": {
+    "tags": [],
+    "external_reference": null,
+    "project": {
+      "logo_big_url": "PROJECT-BIG-LOGO-URL",
+      "permalink": "https://TAIGA-URL/project/development",
+      "id": 1,
+      "name": "Développement"
+    },
+    "watchers": [
+      4
+    ],
+    "milestone": null,
+    "blocked_note": "",
+    "points": [
+      {
+        "role": "Back-end",
+        "value": null,
+        "name": "∞"
+      },
+      {
+        "role": "Front-end",
+        "value": null,
+        "name": "∞"
+      },
+      {
+        "role": "DevOps",
+        "value": null,
+        "name": "∞"
+      }
+    ],
+    "is_closed": false,
+    "id": 524,
+    "status": {
+      "slug": "sprint",
+      "color": "#669900",
+      "is_closed": false,
+      "is_archived": false,
+      "id": 5,
+      "name": "Sprint"
+    },
+    "custom_attributes_values": {},
+    "description": "desc UPDATE",
+    "ref": 4212,
+    "is_blocked": false,
+    "assigned_to": null,
+    "owner": {
+      "gravatar_id": "USER-GRAVATAR-ID",
+      "id": 4,
+      "full_name": "Nazim Lachter",
+      "photo": "USER-PICTURE-URL",
+      "permalink": "https://TAIGA-URL/profile/nazim",
+      "username": "nazim"
+    },
+    "modified_date": "2017-10-31T13:10:51.176Z",
+    "created_date": "2017-10-31T13:06:02.923Z",
+    "client_requirement": false,
+    "subject": "titre UPDATE",
+    "finish_date": null,
+    "generated_from_issue": null,
+    "tribe_gig": null,
+    "team_requirement": false
+  },
+  "type": "userstory"
+}

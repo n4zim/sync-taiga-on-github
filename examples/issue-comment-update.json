@@ -1,0 +1,83 @@
+{
+  "change": {
+    "comment": "COMMENTAIRE UPDATE",
+    "edit_comment_date": "2017-10-31T13:02:38.073Z",
+    "comment_html": "<p>COMMENTAIRE UPDATE</p>",
+    "delete_comment_date": null,
+    "comment_versions": [
+      {
+        "date": "2017-10-31T13:02:14.281Z",
+        "comment_html": "<p>COMMENTAIRE</p>",
+        "user": {
+          "id": 4
+        },
+        "comment": "COMMENTAIRE"
+      }
+    ],
+    "diff": {}
+  },
+  "by": {
+    "gravatar_id": "USER-GRAVATAR-ID",
+    "id": 4,
+    "full_name": "Nazim Lachter",
+    "photo": "USER-PICTURE-URL",
+    "permalink": "https://TAIGA-URL/profile/nazim",
+    "username": "nazim"
+  },
+  "date": "2017-10-31T13:02:38.196Z",
+  "action": "change",
+  "data": {
+    "tags": [],
+    "external_reference": null,
+    "custom_attributes_values": {},
+    "project": {
+      "logo_big_url": "PROJECT-BIG-LOGO-URL",
+      "permalink": "https://TAIGA-URL/project/development",
+      "id": 1,
+      "name": "Développement"
+    },
+    "watchers": [
+      4
+    ],
+    "status": {
+      "slug": "termine",
+      "color": "#73d216",
+      "is_closed": true,
+      "id": 4,
+      "name": "Terminé"
+    },
+    "description": "UPDATE DESC",
+    "milestone": null,
+    "type": {
+      "color": "#ce5c00",
+      "id": 1,
+      "name": "Anomalie"
+    },
+    "priority": {
+      "color": "#3465a4",
+      "id": 2,
+      "name": "Normal"
+    },
+    "ref": 4211,
+    "owner": {
+      "gravatar_id": "USER-GRAVATAR-ID",
+      "id": 4,
+      "full_name": "Nazim Lachter",
+      "photo": "USER-PICTURE-URL",
+      "permalink": "https://TAIGA-URL/profile/nazim",
+      "username": "nazim"
+    },
+    "created_date": "2017-10-31T12:47:30.072Z",
+    "severity": {
+      "color": "#3465a4",
+      "id": 3,
+      "name": "Normal"
+    },
+    "assigned_to": null,
+    "subject": "titre UPDATED",
+    "modified_date": "2017-10-31T13:02:14.227Z",
+    "id": 3061,
+    "finished_date": "2017-10-31T13:00:09.597Z"
+  },
+  "type": "issue"
+}

@@ -1,0 +1,128 @@
+{
+  "change": {
+    "comment": "",
+    "edit_comment_date": null,
+    "comment_html": "",
+    "delete_comment_date": null,
+    "comment_versions": null,
+    "diff": {
+      "subject": {
+        "to": "new task UPDATE",
+        "from": "new task"
+      }
+    }
+  },
+  "by": {
+    "gravatar_id": "USER-GRAVATAR-ID",
+    "id": 4,
+    "full_name": "Nazim Lachter",
+    "photo": "USER-PICTURE-URL",
+    "permalink": "https://TAIGA-URL/profile/nazim",
+    "username": "nazim"
+  },
+  "date": "2017-10-31T13:08:05.442Z",
+  "action": "change",
+  "data": {
+    "tags": [],
+    "external_reference": null,
+    "user_story": {
+      "tags": [],
+      "external_reference": null,
+      "project": {
+        "logo_big_url": "PROJECT-BIG-LOGO-URL",
+        "permalink": "https://TAIGA-URL/project/development",
+        "id": 1,
+        "name": "Développement"
+      },
+      "watchers": [],
+      "milestone": null,
+      "blocked_note": "",
+      "points": [
+        {
+          "role": "Back-end",
+          "value": null,
+          "name": "∞"
+        },
+        {
+          "role": "Front-end",
+          "value": null,
+          "name": "∞"
+        },
+        {
+          "role": "DevOps",
+          "value": null,
+          "name": "∞"
+        }
+      ],
+      "is_closed": false,
+      "id": 524,
+      "status": {
+        "slug": "sprint",
+        "color": "#669900",
+        "is_closed": false,
+        "is_archived": false,
+        "id": 5,
+        "name": "Sprint"
+      },
+      "custom_attributes_values": {},
+      "description": "desc UPDATE",
+      "ref": 4212,
+      "is_blocked": false,
+      "assigned_to": null,
+      "owner": {
+        "gravatar_id": "USER-GRAVATAR-ID",
+        "id": 4,
+        "full_name": "Nazim Lachter",
+        "photo": "USER-PICTURE-URL",
+        "permalink": "https://TAIGA-URL/profile/nazim",
+        "username": "nazim"
+      },
+      "modified_date": "2017-10-31T13:07:25.853Z",
+      "created_date": "2017-10-31T13:06:02.923Z",
+      "client_requirement": false,
+      "subject": "titre UPDATE",
+      "finish_date": null,
+      "generated_from_issue": null,
+      "tribe_gig": null,
+      "team_requirement": false
+    },
+    "is_blocked": false,
+    "watchers": [],
+    "taskboard_order": 1509455265842,
+    "milestone": null,
+    "blocked_note": "",
+    "us_order": 1509455265842,
+    "id": 1133,
+    "owner": {
+      "gravatar_id": "USER-GRAVATAR-ID",
+      "id": 4,
+      "full_name": "Nazim Lachter",
+      "photo": "USER-PICTURE-URL",
+      "permalink": "https://TAIGA-URL/profile/nazim",
+      "username": "nazim"
+    },
+    "custom_attributes_values": {},
+    "is_iocaine": false,
+    "description": "",
+    "ref": 4213,
+    "project": {
+      "logo_big_url": "PROJECT-BIG-LOGO-URL",
+      "permalink": "https://TAIGA-URL/project/development",
+      "id": 1,
+      "name": "Développement"
+    },
+    "assigned_to": null,
+    "status": {
+      "slug": "nouveau",
+      "color": "#999999",
+      "is_closed": false,
+      "id": 1,
+      "name": "Nouveau"
+    },
+    "modified_date": "2017-10-31T13:08:05.369Z",
+    "created_date": "2017-10-31T13:07:45.863Z",
+    "subject": "new task UPDATE",
+    "finished_date": null
+  },
+  "type": "task"
+}
